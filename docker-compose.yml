@@ -1,0 +1,41 @@
+networks:
+  services-network:
+    driver: bridge
+
+volumes:
+  postgres-data:
+  data-storage:
+
+services:
+  database:
+    build:
+      context: ./docker/postgres
+      dockerfile: Dockerfile
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - services-network
+
+  grpc-server:
+    depends_on:
+      - database
+    build:
+      context: .
+      dockerfile: ./docker/server/Dockerfile
+    environment:
+      POSTGRES_HOST: database
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: postgres
+    ports:
+      - "50051:50051"
+    volumes:
+      - data-storage:/app/storage/
+    networks:
+      - services-network
