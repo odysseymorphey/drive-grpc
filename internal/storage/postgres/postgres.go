@@ -3,9 +3,9 @@ package postgres
 import (
 	"context"
 	"database/sql"
-	"drive-grpc/internal/server/models"
 	"fmt"
 	_ "github.com/lib/pq"
+	"github.com/odysseymorphey/drive-grpc/internal/server/models"
 )
 
 type Database struct {

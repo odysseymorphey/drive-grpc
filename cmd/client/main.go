@@ -1,9 +1,9 @@
 package main
 
 import (
-	"drive-grpc/internal/client"
-	"drive-grpc/internal/client/config"
-	"drive-grpc/internal/storage/csv_storage"
+	"github.com/odysseymorphey/drive-grpc/internal/client"
+	"github.com/odysseymorphey/drive-grpc/internal/client/config"
+	"github.com/odysseymorphey/drive-grpc/internal/storage/csv_storage"
 )
 
 func main() {

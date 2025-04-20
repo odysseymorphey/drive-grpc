@@ -1,11 +1,11 @@
 package client
 
 import (
-	procs "drive-grpc/internal/client/grpc"
-	"drive-grpc/internal/client/models"
-	fs "drive-grpc/internal/pb"
-	"drive-grpc/internal/storage/csv_storage"
-	"drive-grpc/internal/utils"
+	procs "github.com/odysseymorphey/drive-grpc/internal/client/grpc"
+	"github.com/odysseymorphey/drive-grpc/internal/client/models"
+	fs "github.com/odysseymorphey/drive-grpc/internal/pb"
+	"github.com/odysseymorphey/drive-grpc/internal/storage/csv_storage"
+	"github.com/odysseymorphey/drive-grpc/internal/utils"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

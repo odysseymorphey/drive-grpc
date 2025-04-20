@@ -1,9 +1,9 @@
 package main
 
 import (
-	"drive-grpc/internal/server/grpc/drive"
-	"drive-grpc/internal/storage/postgres"
 	"fmt"
+	"github.com/odysseymorphey/drive-grpc/internal/server/grpc/drive"
+	"github.com/odysseymorphey/drive-grpc/internal/storage/postgres"
 	"log"
 	"os"
 )

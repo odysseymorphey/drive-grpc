@@ -1,8 +1,8 @@
 package drive
 
 import (
-	files "drive-grpc/internal/pb"
-	"drive-grpc/internal/server/repository"
+	files "github.com/odysseymorphey/drive-grpc/internal/pb"
+	"github.com/odysseymorphey/drive-grpc/internal/server/repository"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 	"log"

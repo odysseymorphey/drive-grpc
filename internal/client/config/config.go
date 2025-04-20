@@ -1,8 +1,8 @@
 package config
 
 import (
-	"drive-grpc/internal/client/models"
 	"flag"
+	"github.com/odysseymorphey/drive-grpc/internal/client/models"
 )
 
 func New() *models.Config {

@@ -1,8 +1,8 @@
 package csv_storage
 
 import (
-	"drive-grpc/internal/server/models"
 	"encoding/csv"
+	"github.com/odysseymorphey/drive-grpc/internal/server/models"
 	"os"
 )
 

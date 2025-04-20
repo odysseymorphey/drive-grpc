@@ -2,7 +2,7 @@ package repository
 
 import (
 	"context"
-	"drive-grpc/internal/server/models"
+	"github.com/odysseymorphey/drive-grpc/internal/server/models"
 )
 
 type Repository interface {

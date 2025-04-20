@@ -1,4 +1,4 @@
-module drive-grpc
+module github.com/odysseymorphey/drive-grpc
 
 go 1.24.0
 

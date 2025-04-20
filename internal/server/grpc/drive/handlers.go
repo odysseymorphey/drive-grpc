@@ -2,10 +2,10 @@ package drive
 
 import (
 	"context"
-	fs "drive-grpc/internal/pb"
-	"drive-grpc/internal/server/models"
-	"drive-grpc/internal/utils"
 	"github.com/google/uuid"
+	fs "github.com/odysseymorphey/drive-grpc/internal/pb"
+	"github.com/odysseymorphey/drive-grpc/internal/server/models"
+	"github.com/odysseymorphey/drive-grpc/internal/utils"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/timestamppb"

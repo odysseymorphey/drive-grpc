@@ -2,9 +2,9 @@ package grpc
 
 import (
 	"context"
-	fs "drive-grpc/internal/pb"
-	"drive-grpc/internal/server/models"
 	"fmt"
+	fs "github.com/odysseymorphey/drive-grpc/internal/pb"
+	"github.com/odysseymorphey/drive-grpc/internal/server/models"
 	"io"
 	"log"
 	"os"
